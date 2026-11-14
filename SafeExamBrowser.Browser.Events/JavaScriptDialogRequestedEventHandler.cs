@@ -1,0 +1,3 @@
+namespace SafeExamBrowser.Browser.Events;
+
+internal delegate void JavaScriptDialogRequestedEventHandler(JavaScriptDialogRequestedEventArgs args);

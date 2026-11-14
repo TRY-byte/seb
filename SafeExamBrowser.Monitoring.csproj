@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>SafeExamBrowser.Monitoring</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="SafeExamBrowser.Monitoring.Contracts" />
+    <Reference Include="SafeExamBrowser.Logging.Contracts" />
+    <Reference Include="SafeExamBrowser.WindowsApi.Contracts" />
+    <Reference Include="SafeExamBrowser.Settings" />
+    <Reference Include="SafeExamBrowser.Configuration.Contracts" />
+    <Reference Include="SafeExamBrowser.SystemComponents.Contracts" />
+    <Reference Include="System.Management" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+</Project>
