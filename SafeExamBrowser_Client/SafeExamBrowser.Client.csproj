@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>SafeExamBrowser.Client</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Resource Remove="safeexambrowser.ico" />
+    <Resource Include="safeexambrowser.ico" LogicalName="safeexambrowser.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="SafeExamBrowser.UserInterface.Contracts" />
+    <Reference Include="SafeExamBrowser.Applications.Contracts" />
+    <Reference Include="SafeExamBrowser.Configuration.Contracts" />
+    <Reference Include="SafeExamBrowser.Browser.Contracts" />
+    <Reference Include="SafeExamBrowser.Communication.Contracts" />
+    <Reference Include="SafeExamBrowser.Proctoring.Contracts" />
+    <Reference Include="SafeExamBrowser.Core.Contracts" />
+    <Reference Include="SafeExamBrowser.Server.Contracts" />
+    <Reference Include="SafeExamBrowser.Settings" />
+    <Reference Include="SafeExamBrowser.Logging.Contracts" />
+    <Reference Include="SafeExamBrowser.Monitoring">
+      <HintPath>..\..\..\..\Downloads\Extracted_SEB\SafeExamBrowser_Monitoring.dll</HintPath>
+    </Reference>
+    <Reference Include="SafeExamBrowser.WindowsApi.Contracts" />
+    <Reference Include="SafeExamBrowser.SystemComponents.Contracts" />
+    <Reference Include="SafeExamBrowser.I18n.Contracts" />
+    <Reference Include="SafeExamBrowser.UserInterface.Shared" />
+    <Reference Include="SafeExamBrowser.WindowsApi" />
+    <Reference Include="SafeExamBrowser.Applications" />
+    <Reference Include="SafeExamBrowser.Communication" />
+    <Reference Include="SafeExamBrowser.Core" />
+    <Reference Include="SafeExamBrowser.Monitoring.Contracts" />
+    <Reference Include="SafeExamBrowser.Logging" />
+    <Reference Include="SafeExamBrowser.Configuration">
+      <HintPath>..\..\..\..\Downloads\Extracted_SEB\SafeExamBrowser_Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="SafeExamBrowser.Browser">
+      <HintPath>..\..\..\..\Downloads\Extracted_SEB\SafeExamBrowser_Browser.dll</HintPath>
+    </Reference>
+    <Reference Include="SafeExamBrowser.Proctoring" />
+    <Reference Include="SafeExamBrowser.Server" />
+    <Reference Include="SafeExamBrowser.SystemComponents" />
+    <Reference Include="SafeExamBrowser.I18n" />
+    <Reference Include="SafeExamBrowser.UserInterface.Mobile" />
+    <Reference Include="SafeExamBrowser.UserInterface.Desktop" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+</Project>
